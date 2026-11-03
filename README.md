@@ -67,7 +67,10 @@ Principles the pipeline is built on (set out in `docs/PROJECT_INSTRUCTIONS.md`):
 | `notebooks/` | The RA's latest exploratory notebook, the source of the anchor patterns in use |
 | `docs/` | Project instructions, kickoff note, session notes, `REPRODUCIBILITY.md`, `DATA_MANIFEST.md` |
 
-**Authorship.** Hannah Nguyen worked on this project as a research assistant in Villanova's MATCH program. The notebook is her exploratory work (through May 2026) and the source of the anchor patterns in use. The scripts in `src/` were developed afterwards in AI-assisted working sessions; the `_Claude` suffix marks them.
+## Contributors
+
+- **Hannah Nguyen**: research assistant, Villanova MATCH program. Author of the exploratory notebook (through May 2026), the source of the anchor patterns in use.
+- **Claude Code** (Anthropic): AI coding assistant. Developed the scripts in `src/` in later working sessions (the `_Claude` suffix marks them) and helped organize this archive.
 
 ## Data and restrictions
 
