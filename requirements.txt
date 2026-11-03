@@ -1,0 +1,10 @@
+# Python 3.10 was used for the scripts in src/ (all other imports are standard library).
+pandas
+openpyxl
+
+# Additionally used by notebooks/hannah_looking_for_asus_05-04.ipynb (Python 3.13):
+# numpy
+# requests
+# textstat
+# tqdm
+# calcbench-api-client   (needs a licensed Calcbench account)

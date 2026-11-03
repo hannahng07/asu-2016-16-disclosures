@@ -1,0 +1,106 @@
+# ---------------------------------------------------------------------------
+# Nothing in this file has been committed. Every exclusion below stays in place
+# until it is separately approved (see _review/FILE_MANIFEST.csv).
+# ---------------------------------------------------------------------------
+
+# Review materials (merge proposal, discrepancy report, manifest, checksums)
+_review/
+
+# Data and outputs: untracked until each file is approved
+data/
+outputs/
+docs/correspondence/
+
+# Never track: raw corpus, licensed data, Stata and Excel files
+*.zip
+*.dta
+*.xlsx
+*.xls
+*.docx
+*.pdf
+*.tar.gz
+*.tgz
+
+# Generated / system files
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+
+# Scripts that hard-code hand-adjudicated firm-level values (corrections, seed
+# sentences, CIK maps). Copied unchanged; untracked until approved.
+# To approve one, delete its line here.
+/src/02_population/link_irish_to_cik_Claude.py
+/src/03_validation/test_us_calls_Claude.py
+/src/04_corrections/apply_amount_of_record_Claude.py
+/src/04_corrections/apply_corrections_Claude.py
+/src/04_corrections/apply_corrections_p2345_Claude.py
+/src/04_corrections/apply_corrections_p4_Claude.py
+/src/04_corrections/apply_dta_findings_Claude.py
+/src/07_goal2_irish/REGRESSION_TEST_Claude.py
+/src/07_goal2_irish/adoption_only_dta_Claude.py
+/src/07_goal2_irish/adoption_only_v4_Claude.py
+/src/07_goal2_irish/amount_rereview3_Claude.py
+/src/07_goal2_irish/asset_class_probe_Claude.py
+/src/07_goal2_irish/bsx_fix_Claude.py
+/src/07_goal2_irish/build_irish_handoff_Claude.py
+/src/07_goal2_irish/build_packets_Claude.py
+/src/07_goal2_irish/build_tracker105_v4c_Claude.py
+/src/07_goal2_irish/fix_handoff_v2_Claude.py
+/src/07_goal2_irish/goal2_add_fullsweep_Claude.py
+/src/07_goal2_irish/goal2_avgo_Claude.py
+/src/07_goal2_irish/hznp_answers_Claude.py
+/src/07_goal2_irish/irish_reader_corrections2_Claude.py
+/src/07_goal2_irish/irish_reader_corrections_Claude.py
+/src/07_goal2_irish/preadoption_estimate_decay_Claude.py
+/src/07_goal2_irish/step2_dta_Claude.py
+/src/07_goal2_irish/transition_and_restatement_Claude.py
+/src/closed_exhibit21/build_ticker_list_Claude.py
+
+# Found at git init (3 Nov 2026): six more scripts that embed hand-adjudicated
+# firm-level verdicts, amounts, transfer years or a CIK map. The manifest had
+# them as TRACK. Held back until approved; delete a line to approve it.
+/src/03_validation/phaseB_adjudicate_Claude.py
+/src/03_validation/reader_calibration_Claude.py
+/src/07_goal2_irish/resolve_asset_class_Claude.py
+/src/07_goal2_irish/goal2_amounts_Claude.py
+/src/07_goal2_irish/focus_scan_Claude.py.2
+/src/closed_exhibit21/merge_calcbench_Claude.py
+
+# Data files anywhere in the tree (approved outputs need an explicit ! rule)
+*.csv
+*.tsv
+*.json
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.h5
+*.sas7bdat
+*.sav
+*.sqlite
+*.db
+*.txt
+!requirements.txt
+
+# Secrets and credentials
+.env
+.env.*
+*.pem
+*.key
+.netrc
+.pgpass
+calcbench*.ini
+credentials*
+
+# Temporary and editor files
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+*~
+.~lock.*
+~$*
+.vscode/
+.idea/
